@@ -13,7 +13,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+# Zurb Foundation Framework gem
+gem 'foundation-rails'
+# Add Foundation Icons gem
+gem 'foundation-icons-sass-rails'
 # Devise gem for authorization
 gem 'devise'
 # Use jquery as the JavaScript library
