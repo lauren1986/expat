@@ -132,6 +132,7 @@ $include-html-global-classes: $include-html-classes;
    $oceanhover: #04C9C9;
    $sun: #E5751F;
    $sunhover: #E58F20;
+   $lightestgrey: #DCDDD2;
    $lightgrey: #BABBB1;
    $darkgrey: #555651;
    $darkestgrey: #464743;
@@ -274,7 +275,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: $gainsboro;
+    $hr-border-color: $lightestgrey;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
@@ -1391,8 +1392,8 @@ $include-html-global-classes: $include-html-classes;
 // Style the top bar dropdown elements
    $topbar-dropdown-bg: $ocean;
 // $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $oil;
+   $topbar-dropdown-link-bg: $ocean;
+   $topbar-dropdown-link-bg-hover: $oceanhover;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
