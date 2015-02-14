@@ -6,12 +6,19 @@
     <h1>Forum Home</h1>
     <p><em>Find me in app/views/posts/index.html.erb</em></p>
 
-    <% @posts.each do |post| %>
-      <h3><%= link_to post.post_title, post %></h3>
-      <p class="post-meta">Published by <%= post.user.email %> <%= time_ago_in_words(post.created_at) %> ago</p>
-      <p><strong>Categories:</strong> Category 1, Category 2, Category 3</p>
-      <hr />
-    <% end %>
+    <div class="row">
+        <% @posts.each do |post| %>
+        <div class="large-10 columns">
+          <h3><%= link_to post.post_title, post %></h3>
+          <p><span class="post-meta">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></span>
+          <br /><strong>Categories:</strong> Category 1, Category 2, Category 3</p>
+        </div>
+        <div class="large-2 columns">
+          <p class="post-meta"><em>17 replies</em></p>
+        </div>
+          <hr />
+        <% end %>
+    </div>
 
   </div>
 

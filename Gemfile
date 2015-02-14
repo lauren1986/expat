@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 # Zurb Foundation Framework gem
 gem 'foundation-rails'
+# Add Foundation Rails helper
+gem 'foundation_rails_helper'
 # Add Foundation Icons gem
 gem 'foundation-icons-sass-rails'
 # Devise gem for authorization

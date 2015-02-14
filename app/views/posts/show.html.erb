@@ -3,8 +3,15 @@
 <div class="row">
   <div class="large-9 columns" id="main_content">
 
+    <nav class="breadcrumbs">
+      <a href="/posts">Forum Home</a>
+      <a href="#">Destination</a>
+      <a href="#">Category</a>
+      <a class="current" href="#">Post Title</a>
+    </nav>
+
     <h1><%= @post.post_title %></h1>
-    <p class="post-meta">Published by Lauren P. about 24 minutes ago</p>
+    <p class="post-meta">Published about 24 minutes ago by Lauren P.</p>
     <p><em>Find me in app/views/posts/show.html.erb</em></p>
 
     <p><%= @post.content %></p>
