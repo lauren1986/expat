@@ -119,26 +119,27 @@ $include-html-global-classes: $include-html-classes;
 // $jet         : #222222;
 // $black       : #000000;
 
-// We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
-
 // Custom brand colors
    $ocean: #03BEB3;
    $oceanhover: #04C9C9;
    $sun: #E5751F;
    $sunhover: #E58F20;
-   $lightestgrey: #DCDDD2;
+   $lightestgrey: #FBFCEF;
+   $lightergrey: #DCDDD2;
    $lightgrey: #BABBB1;
    $darkgrey: #555651;
    $darkestgrey: #464743;
 
+// We use these as default colors throughout
+   $primary-color: $ocean;
+   $secondary-color: $sun;
+   $alert-color: $sun;
+// $success-color: #43AC6A;
+   $warning-color: $sunhover;
+   $info-color: $oceanhover;
+
 // We use these to control various global styles
-// $body-bg: $white;
+   $body-bg: $lightergrey;
    $body-font-color: $darkgrey;
    $body-font-family: $opensans;
 // $body-font-weight: $font-weight-normal;
@@ -270,12 +271,12 @@ $include-html-global-classes: $include-html-classes;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+   $anchor-font-color-hover: $oceanhover;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-    $hr-border-color: $lightestgrey;
+   $hr-border-color: $lightergrey;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
@@ -1460,6 +1461,27 @@ $include-html-global-classes: $include-html-classes;
 
 // Lauren's custom styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/* --- Main Section --- */
+
+#main_content {
+  background-color: #FFFFFF;
+  margin: 2% 0 2% 0;
+  padding: 1% 2% 1% 2%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.post-meta {
+  font-size: 80%;
+}
+
+/* --- Side Navigation ---*/
+
+#side_navigation {
+  margin: 2% 0 2% 0;
+}
 
 /* --- Footer Section --- */
 .footer h5 {
