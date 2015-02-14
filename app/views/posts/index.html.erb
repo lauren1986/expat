@@ -1,7 +1,10 @@
 <h1>Posts#index</h1>
 <p><em>Find me in app/views/posts/index.html.erb</em></p>
 
+<%= link_to "New Post", new_post_path %>
+
 <% @posts.each do |post| %>
   <h2><%= post.post_title %></h2>
-  <p><%= time_ago_in_words(post.created_at) %></p>
+  <p>Published <%= time_ago_in_words(post.created_at) %> ago</p>
+  <hr />
 <% end %>
