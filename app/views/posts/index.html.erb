@@ -4,7 +4,7 @@
 <%= link_to "New Post", new_post_path %>
 
 <% @posts.each do |post| %>
-  <h2><%= post.post_title %></h2>
+  <h2><%= link_to post.post_title, post %></h2>
   <p>Published <%= time_ago_in_words(post.created_at) %> ago</p>
   <hr />
 <% end %>
