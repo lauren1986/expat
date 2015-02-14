@@ -5,6 +5,6 @@
 
 <% @posts.each do |post| %>
   <h2><%= link_to post.post_title, post %></h2>
-  <p>Published <%= time_ago_in_words(post.created_at) %> ago</p>
+  <p>Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></p>
   <hr />
 <% end %>
