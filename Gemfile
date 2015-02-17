@@ -21,6 +21,8 @@ gem 'foundation_rails_helper'
 gem 'foundation-icons-sass-rails'
 # Devise gem for authorization
 gem 'devise'
+# Breadcrumbs On Rails gem
+gem "breadcrumbs_on_rails"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

@@ -4,6 +4,10 @@
   <div class="large-9 columns" id="main_content">
 
     <nav class="breadcrumbs">
+      <%= render_breadcrumbs %>
+    </nav>
+
+    <nav class="breadcrumbs">
       <a href="/posts">Forum Home</a>
       <a href="#">Destination</a>
       <a href="#">Category</a>
@@ -18,9 +22,8 @@
     <p class="post-meta"><i class="fi-price-tag"></i> Category 1, Category 2, Category 3
     <br /><i class="fi-marker"></i> City, State, Country</p>
 
-    <%= link_to "Edit", edit_post_path(@post), class: "button radius small" %>
-    <%= link_to "Delete", post_path(@post), class: "button radius small", method: :delete, data: { confirm: "Are you sure you want to do this? Be warned, it's permanent!" }%>
-
+    <%= link_to " Edit", edit_post_path(@post), class: "button radius small fi-pencil" %>
+    <%= link_to " Delete", post_path(@post), class: "button radius small fi-trash", method: :delete, data: { confirm: "Are you sure you want to do this? Be warned, it's permanent!" }%>
     <hr />
     <div class="comment">
       <h4><%= @post.comments.count %> replies</h4>

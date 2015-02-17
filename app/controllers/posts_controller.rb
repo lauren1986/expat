@@ -1,8 +1,14 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
+  add_breadcrumb "Forum Home", :root_path
+  add_breadcrumb "Destination", :root_path
+  add_breadcrumb "Category", :root_path
+  add_breadcrumb "Post Title", :post_path
+
   def index
     @posts = Post.all.order("created_at DESC")
+    add_breadcrumb "index", root_path
   end
 
   def show

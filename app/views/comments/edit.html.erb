@@ -1,13 +1,21 @@
 <%= render 'layouts/inav' %>
 <div class="row">
   <div class="large-9 columns" id="main_content">
+    
+    <nav class="breadcrumbs">
+      <a href="/posts">Forum Home</a>
+      <a href="#">Destination</a>
+      <a href="#">Category</a>
+      <a href="#">Post Title</a>
+      <a class="current" href="#">Comment</a>
+    </nav>
 
-    <h1>Comments#edit</h1>
-    <p><em>Find me in app/views/comments/edit.html.erb</em></p>
+    <h1>Edit Your Comment</h1>
+    <p>Need to modify your comment? No problem! Make your changes below and click on the button to save all modifications.</p>
 
     <%= form_for ([@post, @comment]) do |f| %>
       <%= f.text_field :comment %><br />
-      <%= f.submit %>
+      <%= f.submit 'Update comment', class: "button radius small" %>
     <% end %>
 
 

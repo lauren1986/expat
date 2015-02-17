@@ -1485,6 +1485,15 @@ $include-html-global-classes: $include-html-classes;
   color: $lighterdarkgrey;
 }
 
+.comment_editing {
+  font-size: rem-calc(14);
+  color: $darkerlightgrey;
+}
+
+.comment_editing a {
+  color: $darkerlightgrey;
+}
+
 /* --- Side Navigation ---*/
 
 #side_navigation {
