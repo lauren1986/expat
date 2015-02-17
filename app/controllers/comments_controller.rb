@@ -6,9 +6,11 @@ class CommentsController < ApplicationController
 
     if @comment.save
       redirect_to post_path(@post)
+      CommentMailer.new_comment("Lauren").deliver
     else
       render 'new'
     end
+
   end
 
   def edit
