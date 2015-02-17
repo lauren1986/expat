@@ -1,0 +1,18 @@
+<%= render 'layouts/inav' %>
+<div class="row">
+  <div class="large-9 columns" id="main_content">
+
+    <h1>Comments#edit</h1>
+    <p><em>Find me in app/views/comments/edit.html.erb</em></p>
+
+    <%= form_for ([@post, @comment]) do |f| %>
+      <%= f.text_field :comment %><br />
+      <%= f.submit %>
+    <% end %>
+
+
+  </div>
+
+  <%= render 'layouts/sideinav' %>
+
+</div>

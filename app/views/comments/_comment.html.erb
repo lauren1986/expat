@@ -1,3 +1,7 @@
 <div class="comment">
   <p><%= comment.comment %></p>
+  <p class="post-meta"><%= comment.post.user.email %> replied <%= time_ago_in_words(comment.created_at) %> ago</p>
+  <%= link_to "Edit this comment", edit_post_comment_path(comment.post, comment) %>
+  <%= link_to "Delete this comment", [comment.post, comment], method: :delete, data: {confirm: "Are you sure?"} %>
+  <hr />
 </div>
