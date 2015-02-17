@@ -3,10 +3,15 @@
 <div class="row">
   <div class="large-9 columns" id="main_content">
 
-    <h1>Posts#new</h1>
+    <h1>Post Your Question</h1>
     <p><em>Find me in app/views/posts/new.html.erb</em></p>
+    <p><em>Explainer blurb goes here: Have a burning question that requires an answer from your fellow expat community? You're in luck! Post it here and wait for the responses to come rolling in.</em></p>
 
-    <%= render 'form' %>
+    <%= form_for @post do |f| %>
+      <%= f.text_field :post_title, :placeholder => "Enter a short title for your question..." %>
+      <%= f.text_area :content, :placeholder => "Give more details here..." %>
+      <%= f.submit 'Start the discussion', class: "button radius small"  %><br />
+    <% end %>
 
   </div>
 

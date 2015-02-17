@@ -126,7 +126,9 @@ $include-html-global-classes: $include-html-classes;
    $sunhover: #E58F20;
    $lightestgrey: #FBFCEF;
    $lightergrey: #DCDDD2;
+   $darkerlightgrey: #C6C6BC;
    $lightgrey: #BABBB1;
+   $lighterdarkgrey: #777771;
    $darkgrey: #555651;
    $darkestgrey: #464743;
 
@@ -155,7 +157,7 @@ $include-html-global-classes: $include-html-classes;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+  $global-radius: 10px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -419,11 +421,11 @@ $include-html-global-classes: $include-html-classes;
 // $crumb-radius: $global-radius;
 
 // We use these to set various text styles for breadcrumbs.
-// $crumb-font-size: rem-calc(11);
+   $crumb-font-size: rem-calc(11);
 // $crumb-font-color: $primary-color;
    $crumb-font-color-current: $darkgrey;
    $crumb-font-color-unavailable: $lightgrey;
-   $crumb-font-transform: uppercase;
+   $crumb-font-transform: none;
    $crumb-link-decor: underline;
 
 // We use these to control the slash between breadcrumbs
@@ -448,7 +450,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
 // $button-font-color: $white;
-// $button-font-color-alt: $oil;
+// $button-font-color-alt: $sun;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
@@ -466,14 +468,14 @@ $include-html-global-classes: $include-html-classes;
    $button-bg-hover: $sunhover;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
-// $secondary-button-border-color: $secondary-button-bg-hover;
+// $secondary-button-border-color: $sun;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
 // $success-button-border-color: $success-button-bg-hover;
 // $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
 // $alert-button-border-color: $alert-button-bg-hover;
 
 // We use this to set the default radius used throughout the core.
-// $button-radius: $global-radius;
+  $button-radius: 10px;
 // $button-round: $global-rounded;
 
 // We use this to set default opacity and cursor for disabled buttons.
@@ -646,7 +648,7 @@ $include-html-global-classes: $include-html-classes;
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
-// $input-border-radius: $global-radius;
+   $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -1148,12 +1150,12 @@ $include-html-global-classes: $include-html-classes;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
+   $side-nav-link-color: $darkgrey;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-bg-hover: hsla(0, 0, 0, 0.025);
 // $side-nav-link-margin: 0;
-// $side-nav-link-padding: rem-calc(7 14);
+   $side-nav-link-padding: rem-calc(5 14);
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
@@ -1169,7 +1171,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to control border styles
 // $side-nav-divider-size: 1px;
 // $side-nav-divider-style: solid;
-// $side-nav-divider-color: scale-color($white, $lightness: 10%);
+   $side-nav-divider-color: $darkerlightgrey;
 
 // 27. Split Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1462,6 +1464,8 @@ $include-html-global-classes: $include-html-classes;
 // Lauren's custom styles
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+/* --- Global Styles --- */
+
 /* --- Main Section --- */
 
 #main_content {
@@ -1471,10 +1475,14 @@ $include-html-global-classes: $include-html-classes;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 20px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 8px 20px -13px rgba(0,0,0,0.75);
+  box-shadow: 8px 8px 20px -13px rgba(0,0,0,0.75);
 }
 
 .post-meta {
-  font-size: 80%;
+  font-size: rem-calc(14);
+  color: $lighterdarkgrey;
 }
 
 /* --- Side Navigation ---*/
@@ -1484,15 +1492,19 @@ $include-html-global-classes: $include-html-classes;
 }
 
 /* --- Footer Section --- */
+.footer {
+  background-color: $lightergrey;
+}
+
 .footer h5 {
   margin: 4% 0 0 0;
 }
 
-.social a {
-  color: $darkgrey;
+.socialmedia {
+  color: $lighterdarkgrey;
 }
 
-.social a:hover {
+.socialmedia:hover {
   color: $sun;
 }
 

@@ -3,15 +3,27 @@
 <div class="row">
   <div class="large-9 columns" id="main_content">
 
-    <h1>Edit Post</h1>
+    <nav class="breadcrumbs">
+      <a href="/posts">Forum Home</a>
+      <a href="#">Destination</a>
+      <a href="#">Category</a>
+      <a href="#">Post Title</a>
+      <a class="current" href="#">Edit</a>
+    </nav>
+
+    <h1>Edit Your Question</h1>
     <p><em>Find me in app/views/posts/edit.html.erb</em></p>
 
-    <%= render 'form' %>
+    <%= form_for @post do |f| %>
+      <%= f.text_field :post_title, :placeholder => "Enter a short title for your question..." %>
+      <%= f.text_area :content, :placeholder => "Give more details here..." %>
+      <%= f.submit 'Save your changes', class: "button radius small"  %><br />
+    <% end %>
 
     <%= link_to "Cancel", post_path %>
 
   </div>
 
   <%= render 'layouts/sideinav' %>
-  
+
 </div>
