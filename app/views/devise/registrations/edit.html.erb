@@ -3,7 +3,7 @@
 <div class="row">
   <div class="large-9 columns" id="main_content">
 
-    <div class="comment_editing">
+    <div class="comment_editing right">
       <%= link_to " Go back", :back, class: "fi-arrow-left" %>
     </div>
 
@@ -31,8 +31,11 @@
       </div>
     <% end %>
 
+    <br />
+    <hr />
     <h3>Cancel my account</h3>
-      <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+      <p>Unhappy? Ok, go ahead and cancel your account. Note, once you cancel, everything associated with your account will be deleted, including posts and comments. You can't get them back. Ever. You've been forewarned!</p>
+      <%= button_to "Cancel my account", registration_path(resource_name), class: "button radius small", data: { confirm: "Are you 100% positive you want to delete your account?" }, method: :delete %></p>
 
   </div>
 
