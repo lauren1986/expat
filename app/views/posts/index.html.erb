@@ -10,7 +10,7 @@
         <% @posts.each do |post| %>
         <div class="large-10 columns">
           <h3><%= link_to post.post_title, post %></h3>
-          <p><span class="post-meta">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></span>
+          <p><span class="post-meta">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.first_name %> <%= post.user.last_name %></span>
           <br /><i class="fi-price-tag"></i> Category 1, Category 2, Category 3
           <br /><i class="fi-marker"></i> City, State, Country</p>
         </div>

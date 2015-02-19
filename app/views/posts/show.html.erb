@@ -8,7 +8,7 @@
     </nav>
 
     <h1><%= @post.post_title %></h1>
-    <p class="post-meta">Published about 24 minutes ago by Lauren P.<br />
+    <p class="post-meta">Published <%= time_ago_in_words(@post.created_at) %> ago by <%= @post.user.first_name %> <%= @post.user.last_name %><br />
 
     <p><%= @post.content %></p>
 
