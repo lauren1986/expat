@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 
   get 'categories/index'
 
-  get 'categories/show'
+  #get 'categories/show'
 
-  #get 'categories/:id', to: 'categories#show', as: 'category'
+  get '/categories/:id', to: 'categories#show', as: 'category'
 
   get 'pages/home'
 
