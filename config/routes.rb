@@ -15,6 +15,16 @@ Rails.application.routes.draw do
 
   get 'categories/:id', to: 'categories#show', as: 'category'
 
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/who'
+
+  get 'pages/contact'
+
+  get 'pages/blog'
+
 
 
   # get 'posts/index'
