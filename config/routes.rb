@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
 
-  root 'posts#index'
+  root 'pages#index'
 
   get 'categories/index'
 
