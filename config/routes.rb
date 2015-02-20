@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
 
-  root 'pages#home'
+  root 'pages/home'
 
   get 'posts#index'
 
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   get 'categories/:id', to: 'categories#show', as: 'category'
 
-  get 'pages/home'
+  #get 'pages/home'
 
   get 'pages/about'
 
