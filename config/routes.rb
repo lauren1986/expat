@@ -9,8 +9,6 @@ Rails.application.routes.draw do
 
   root 'posts#index'
 
-  get 'posts#index'
-
   get 'categories/index'
 
   #get 'categories/show'
