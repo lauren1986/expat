@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = current_user.posts.build
+    @post = Post.new
   end
 
   def create
@@ -31,6 +31,8 @@ class PostsController < ApplicationController
   end
 
   def edit
+    add_breadcrumb "#{@post.post_title}", :post_path
+    add_breadcrumb "Edit", :style => 'active'
   end
 
   def update

@@ -1,18 +1,20 @@
 Rails.application.routes.draw do
-  get 'categories/index'
-
-  #get 'categories/show'
-
-  get 'categories/:id' => 'categories#show'
-
 
   devise_for :users, :controllers => { registrations: 'registrations' }
+
   resources :posts do
     resources :comments
   end
 
 
   root 'posts#index'
+
+  get 'categories/index'
+
+  #get 'categories/show'
+
+  get 'categories/:id', to: 'categories#show', as: 'category'
+
 
 
   # get 'posts/index'
