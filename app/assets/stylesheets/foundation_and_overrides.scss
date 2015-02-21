@@ -1471,14 +1471,15 @@ $include-html-global-classes: $include-html-classes;
   height: rem-calc(24);
   margin: rem-calc(-5);
   cursor: default;
-}
 
-.found_pagination a, span, em {
-  padding: 0.2em 0.5em;
-  height: rem-calc(24);
-  font-size: rem-calc(14);
-  margin: rem-calc(5);
-  color: $lighterdarkgrey;
+  a, span, em {
+   padding: 0.2em 0.5em;
+   height: rem-calc(24);
+   font-size: rem-calc(14);
+   margin: rem-calc(5);
+   color: $lighterdarkgrey;
+ }
+ 
 }
 
 .found_pagination a {
