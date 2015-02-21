@@ -1479,17 +1479,17 @@ $include-html-global-classes: $include-html-classes;
    margin: rem-calc(5);
    color: $lighterdarkgrey;
  }
- 
-}
 
-.found_pagination a {
+ a {
   padding: rem-calc(1 10 1);
 
-}
+  }
 
-.found_pagination a:hover {
-  background-color: scale-color($white, $lightness: -10%);
-  color: $lighterdarkgrey;
+  a:hover {
+    background-color: scale-color($white, $lightness: -10%);
+    color: $lighterdarkgrey;
+  }
+
 }
 
 .current {
