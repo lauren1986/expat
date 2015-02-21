@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("created_at DESC")
-    add_breadcrumb "index", post_path
+    add_breadcrumb "index", root_path
   end
 
   def show
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
 
   def edit
     add_breadcrumb "#{@post.post_title}", :post_path
-    add_breadcrumb "Edit", :style => 'active'
+    add_breadcrumb "Edit", :post_path, :style => 'active'
   end
 
   def update
