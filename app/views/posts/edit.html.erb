@@ -13,7 +13,6 @@
     <%= form_for @post do |f| %>
       <%= f.text_field :post_title, :placeholder => "Enter a short title for your question..." %>
       <%= f.text_area :content, :placeholder => "Give more details here..." %>
-      <%= f.select :category_ids, Category.all.collect {|x| [x.category_name, x.id]}, {}, :multiple => true %>
       <%= f.submit 'Save your changes', class: "button radius small"  %><br />
     <% end %>
 
