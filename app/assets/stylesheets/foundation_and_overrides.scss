@@ -1466,6 +1466,69 @@ $include-html-global-classes: $include-html-classes;
 
 /* --- Global Styles --- */
 
+/* Pagination */
+.found_pagination {
+  height: rem-calc(24);
+  margin: rem-calc(-5);
+  cursor: default;
+}
+
+.found_pagination a, span, em {
+  padding: 0.2em 0.5em;
+  height: rem-calc(24);
+  font-size: rem-calc(14);
+  margin: rem-calc(5);
+  color: $lighterdarkgrey;
+}
+
+.found_pagination a {
+  padding: rem-calc(1 10 1);
+
+}
+
+.found_pagination a:hover {
+  background-color: scale-color($white, $lightness: -10%);
+  color: $lighterdarkgrey;
+}
+
+.current {
+  color: $white;
+  font-weight: bold;
+  background-color: $primary-color;
+  font-style: normal;
+}
+
+
+// $include-pagination-classes: $include-html-classes;
+
+// We use these to control the pagination container
+// $pagination-height: rem-calc(24);
+// $pagination-margin: rem-calc(-5);
+
+// We use these to set the list-item properties
+// $pagination-li-float: $default-float;
+// $pagination-li-height: rem-calc(24);
+// $pagination-li-font-color: $jet;
+// $pagination-li-font-size: rem-calc(14);
+// $pagination-li-margin: rem-calc(5);
+
+// We use these for the pagination anchor links
+// $pagination-link-pad: rem-calc(1 10 1);
+// $pagination-link-font-color: $aluminum;
+// $pagination-link-active-bg: scale-color($white, $lightness: -10%);
+
+// We use these for disabled anchor links
+// $pagination-link-unavailable-cursor: default;
+// $pagination-link-unavailable-font-color: $aluminum;
+// $pagination-link-unavailable-bg-active: transparent;
+
+// We use these for currently selected anchor links
+// $pagination-link-current-background: $primary-color;
+// $pagination-link-current-font-color: $white;
+// $pagination-link-current-font-weight: $font-weight-bold;
+// $pagination-link-current-cursor: default;
+// $pagination-link-current-active-bg: $primary-color;
+
 /* --- Main Section --- */
 
 #main_content {
