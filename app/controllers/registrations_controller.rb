@@ -4,10 +4,6 @@ class RegistrationsController < Devise::RegistrationsController
     '/posts'
   end
 
-  def after_sign_in_path_for(users)
-    '/posts'
-  end
-
   private
 
    def sign_up_params
