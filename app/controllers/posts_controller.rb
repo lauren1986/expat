@@ -25,8 +25,6 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
 
     if @post.save
-      params[:categories].each do |categories|
-        categories = Topic.new(:category_id => categories, :post_id => @post.id)
       redirect_to @post
     else
       render 'new'
