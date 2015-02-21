@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   add_breadcrumb "Category", :root_path
 
   def index
-    @posts = Post.all.order("created_at DESC")
+    @posts = Post.all
     @posts = Post.paginate(:page => params[:page], :per_page => 8, :order => 'created_at DESC')
     add_breadcrumb "index", root_path
   end
