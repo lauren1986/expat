@@ -3,11 +3,11 @@ class PostsController < ApplicationController
 
   add_breadcrumb "Forum Home", :posts_path
   add_breadcrumb "Destination", :root_path
-  add_breadcrumb "Category", :root_path
+  add_breadcrumb "Category", :categories_path
 
   def index
     @posts = Post.all.order("created_at DESC")
-    add_breadcrumb "index", root_path
+    add_breadcrumb "index", posts_path
   end
 
   def show
