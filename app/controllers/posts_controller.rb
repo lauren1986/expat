@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order("created_at DESC")
-    add_breadcrumb "index", posts_path
+    add_breadcrumb "index", post_path
   end
 
   def show
