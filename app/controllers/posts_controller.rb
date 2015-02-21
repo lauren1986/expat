@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
-  add_breadcrumb "Forum Home", :root_path
+  add_breadcrumb "Forum Home", :posts_path
   add_breadcrumb "Destination", :root_path
   add_breadcrumb "Category", :root_path
 
