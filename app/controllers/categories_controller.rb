@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
 
-  add_breadcrumb "Forum Home", :root_path
+  add_breadcrumb "Forum Home", :posts_path
   add_breadcrumb "Destination", :root_path
 
   def index
