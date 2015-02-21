@@ -41,6 +41,8 @@ gem 'aws-sdk'
 gem 'rails_12factor'
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
+# Gemfile for rendering will_paginate with foundation styling
+gem 'will_paginate-foundation'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
