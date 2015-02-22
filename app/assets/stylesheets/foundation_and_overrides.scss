@@ -1530,10 +1530,34 @@ $include-html-global-classes: $include-html-classes;
   margin: 0 5% 0 0;
 }
 
-/* --- Home Page ---*/
+/* --- Home Parallax ---*/
 #slide-2 .bcg {
   background-image:url('/assets/home_1920x1280.jpg');
 }
+
+#slide-2 .hsContent {
+    margin-left: -450px;
+    top: auto;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('/assets/home_1920x1280.jpg')}
+#slide-4 .hsContent {
+    margin-left: -450px;
+    position: fixed;
+    top: 250px;
+}
+#slide-4 h2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* --- Home Section ---*/
 
 .white-title {
   color: $white;
