@@ -1,9 +1,9 @@
 <div class="comment">
   <p><%= comment.comment %></p>
-  <p class="post-meta"><%= comment.post.user.first_name %> <%= comment.post.user.last_name %> replied <%= time_ago_in_words(comment.created_at) %> ago</p>
+  <p class="post-meta"><%= comment.user.first_name %> <%= comment.user.last_name %> replied <%= time_ago_in_words(comment.created_at) %> ago</p>
   <div class="comment_editing">
-    <%= link_to " Edit", edit_post_comment_path(comment.post, comment), class: "fi-pencil" %>  |
-   <%= link_to " Delete", [comment.post, comment], class: "fi-trash", method: :delete, data: {confirm: "Are you sure?"} %>
+      <%= link_to " Edit", edit_post_comment_path(comment.post, comment), class: "fi-pencil" %>  |
+      <%= link_to " Delete", [comment.post, comment], class: "fi-trash", method: :delete, data: {confirm: "Are you sure?"} %>
   </div>
   <hr />
 </div>
