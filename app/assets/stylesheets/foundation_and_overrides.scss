@@ -1535,6 +1535,10 @@ $include-html-global-classes: $include-html-classes;
 .home1 {
   width: 100%;
   height: auto;
+
+  h1 {
+    color: $white;
+  }
 }
 
 .home_section_two {
