@@ -1544,6 +1544,14 @@ $include-html-global-classes: $include-html-classes;
   background-size: cover;
 }
 
+.module:last-child {
+  margin-bottom: 0;
+}
+
+.module p:last-child {
+  margin-bottom: 0;
+}
+
 .home1 {
   background-image:url("/assets/home_1600x600.jpg");
 }
