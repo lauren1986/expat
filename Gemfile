@@ -38,7 +38,7 @@ gem 'figaro'
 # Amazon SW3
 gem 'aws-sdk'
 # Heroku stuff
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 # Gemfile for rendering will_paginate with foundation styling
