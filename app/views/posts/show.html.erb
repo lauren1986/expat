@@ -15,7 +15,9 @@
     <p class="post-meta"><i class="fi-price-tag"></i> Category 1, Category 2, Category 3
     <br /><i class="fi-marker"></i> City, State, Country</p>
 
+    <% if current_user == @post.user %>
     <%= link_to " Edit", edit_post_path(@post), class: "button radius small fi-pencil" %>
+      <% end %>
     <%= link_to " Delete", post_path(@post), class: "button radius small fi-trash", method: :delete, data: { confirm: "Are you sure you want to do this? Be warned, it's permanent!" }%>
     <hr />
     <div class="comment">
