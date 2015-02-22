@@ -1531,7 +1531,9 @@ $include-html-global-classes: $include-html-classes;
 }
 
 /* --- Home Page ---*/
-#slide-2 .bcg {background-image:url('/assets/home_1920x1280.jpg')
+#slide-2 .bcg {
+  background-image:url('/assets/home_1920x1280.jpg');
+}
 
 .white-title {
   color: $white;
