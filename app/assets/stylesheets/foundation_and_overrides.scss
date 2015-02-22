@@ -1536,35 +1536,32 @@ $include-html-global-classes: $include-html-classes;
   color: $white;
 }
 
+.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .home1 {
   background-image:url("/assets/home_1600x600.jpg");
-  max-width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .home2 {
   background-image:url("/assets/home_1600x600.jpg");
-  max-width: 100%;
-  height: 500px;
 }
 
 .home3{
   background-image:url("/assets/home_1600x600.jpg");
-  max-width: 100%;
-  height: 500px;
 }
 
 .home4 {
   background-image:url("/assets/home_1600x600.jpg");
-  max-width: 100%;
-  height: 500px;
 }
 
 .home5 {
-  background-image:url("/assets/home_1920x1280.jpg");
-  max-width: 100%;
-  height: 500px;
+  background-image:url("/assets/home_1600x600.jpg");
 }
 
 @import 'foundation';
