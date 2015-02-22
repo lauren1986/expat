@@ -1554,8 +1554,12 @@ $include-html-global-classes: $include-html-classes;
   top: 50%;
 }
 
-#slide-1 .bcg {
-  background-image:url("/assets/home_1920x1280.jpg");
+/* --- Parallax Slide 1 --- */
+
+#slide-1 .bcg {background-image:url("/assets/home_1920x1280.jpg");
+#slide-1 .hsContent {
+  bottom: 200px;
+  top: auto;
 }
 
 #slide-2 .bcg {
