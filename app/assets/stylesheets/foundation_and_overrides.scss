@@ -1538,6 +1538,7 @@ $include-html-global-classes: $include-html-classes;
 
 .parallax {
   height: 600px;
+  max-width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
