@@ -1,5 +1,5 @@
 <div class="comment">
-  <p><%= simple_format(comment.comment) %></p>
+  <p><%= comment.comment %></p>
   <p class="post-meta"><%= comment.user.first_name %> <%= comment.user.last_name %> replied <%= time_ago_in_words(comment.created_at) %> ago</p>
   <div class="comment_editing">
     <% if current_user == comment.user %>
