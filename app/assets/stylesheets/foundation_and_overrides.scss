@@ -1530,25 +1530,6 @@ $include-html-global-classes: $include-html-classes;
   margin: 0 5% 0 0;
 }
 
-/* --- Home Parallax ---*/
-
-
-#slide-1 {
-  background-image:url("/assets/home_1920x1280.jpg");
-}
-
-#slide-2 {
-  background-image:url("/assets/home_1920x1280.jpg");
-}
-
-#slide-3 {
-  background-image:url("/assets/home_1920x1280.jpg");
-}
-
-#slide-4 {
-  background-image:url("/assets/home_1920x1280.jpg");
-  }
-
 /* --- Home Section ---*/
 
 .white-title {
@@ -1558,7 +1539,6 @@ $include-html-global-classes: $include-html-classes;
 .home1 {
   background-image:url("/assets/home_1920x1280.jpg");
   width: 100%;
-  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
