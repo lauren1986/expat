@@ -1,7 +1,7 @@
 <%= render 'layouts/inav' %>
 <div class="row">
   <div class="large-9 columns" id="main_content">
-    
+
     <nav class="breadcrumbs">
       <a href="/posts">Forum Home</a>
       <a href="#">Destination</a>
@@ -14,7 +14,7 @@
     <p>Need to modify your comment? No problem! Make your changes below and click on the button to save all modifications.</p>
 
     <%= form_for ([@post, @comment]) do |f| %>
-      <%= f.text_field :comment %><br />
+      <%= f.text_area :comment %><br />
       <%= f.submit 'Update comment', class: "button radius small" %>
     <% end %>
 
