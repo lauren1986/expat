@@ -22,7 +22,7 @@
     <hr />
     <div class="comment">
       <h4><%= @post.comments.count %> replies</h4>
-      <%= render @post.comments %>
+      <%= render simple_format (@post.comments) %>
       <h3>Reply to question</h3>
       <%= render 'comments/form' %>
 
