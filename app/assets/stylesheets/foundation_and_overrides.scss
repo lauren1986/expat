@@ -1555,11 +1555,11 @@ $include-html-global-classes: $include-html-classes;
 }
 
 #slide-1 .bcg {
-  background-image:url('/assets/home_1920x1280.jpg');
+  background-image:url("/assets/home_1920x1280.jpg");
 }
 
 #slide-2 .bcg {
-  background-image:url('/assets/home_1920x1280.jpg');
+  background-image:url("/assets/home_1920x1280.jpg");
 }
 
 #slide-2 .hsContent {
@@ -1572,12 +1572,12 @@ $include-html-global-classes: $include-html-classes;
 }
 
 #slide-3 .bcg {
-  background-image:url('/assets/home_1920x1280.jpg');
+  background-image:url("/assets/home_1920x1280.jpg");
 }
 
 /* Slide 4 */
 #slide-4 .bcg {
-  background-image:url('/assets/home_1920x1280.jpg');
+  background-image:url("/assets/home_1920x1280.jpg");
   }
 #slide-4 .hsContent {
     margin-left: -450px;
