@@ -1538,7 +1538,6 @@ $include-html-global-classes: $include-html-classes;
 
 .parallax {
   height: 600px;
-  max-width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1551,6 +1550,10 @@ $include-html-global-classes: $include-html-classes;
 
 .module p:last-child {
   margin-bottom: 0;
+}
+
+.parallaxtitle {
+  line-height: 600px;
 }
 
 .home1 {
