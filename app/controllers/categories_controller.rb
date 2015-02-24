@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @categories = @category.posts.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
+    @categories = Category.posts.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
     add_breadcrumb "#{@category.category_name}", :category_path, :style => 'active'
   end
 end
