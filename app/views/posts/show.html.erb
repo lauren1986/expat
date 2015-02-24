@@ -19,7 +19,7 @@
       <%= link_to " Edit", edit_post_path(@post), class: "button radius small fi-pencil" %>
     <% end %>
     <% if current_user == @post.user %>
-    <%= link_to " Delete", post_path(@post), class: "button radius small fi-trash", method: :delete, data: { confirm: "Are you sure you want to do this? Be warned, it's permanent!" }%>
+      <%= link_to " Delete", post_path(@post), class: "button radius small fi-trash", method: :delete, data: { confirm: "Are you sure you want to do this? Be warned, it's permanent!" }%>
     <% end %>
     <hr />
     <div class="comment">
