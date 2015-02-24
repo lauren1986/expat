@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_filter :authorize
+
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
   add_breadcrumb "Forum Home", :posts_path
