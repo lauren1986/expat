@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
   add_breadcrumb "Forum Home", :posts_path
   add_breadcrumb "Destination", :root_path
-  add_breadcrumb "#{@post.category_id}", :root_path
+  add_breadcrumb "Category", :root_path
 
   def index
     @posts = Post.all

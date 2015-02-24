@@ -9,6 +9,6 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    add_breadcrumb "#{@category.category_name}", :category_path, :style => 'active'
+    add_breadcrumb "Category", :category_path, :style => 'active'
   end
 end
