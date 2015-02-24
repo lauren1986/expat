@@ -4,7 +4,7 @@
   <div class="large-9 columns" id="main_content">
 
     <h1>All categories</h1>
-    <p>Find me in app/views/categories/index.html.erb</p>
+    <p><em>Find me in app/views/categories/index.html.erb</em></p>
 
     <!-- Employment section -->
 
@@ -14,7 +14,7 @@
       <p>Explainer blurb about the category goes here.</p>
     </div>
     <div class="large-2 columns">
-      <p class="post-meta"><em># posts</em></p>
+      <p class="post-meta"><em><%= @category.posts.count %> posts</em></p>
     </div>
       <hr />
     </div>
