@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
-  get 'categories' => 'categories#index'
+  get 'categories/index'
 
   #get 'categories/show'
 
