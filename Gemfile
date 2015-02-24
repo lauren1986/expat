@@ -36,7 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Figaro gem to keep your passwords and secrets out of your git repo
 gem 'figaro'
 # Amazon SW3
-gem 'aws-sdk'
+# gem 'aws-sdk'
 # Heroku stuff
 gem 'rails_12factor', group: :production
 # Gemfile for Rails 3+, Sinatra, or Merb

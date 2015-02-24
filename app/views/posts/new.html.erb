@@ -10,6 +10,7 @@
     <%= form_for @post do |f| %>
       <%= f.text_field :post_title, :placeholder => "Enter a short title for your question..." %>
       <%= f.text_area :content, :placeholder => "Give more details here..." %>
+      <%= f.collection_select :category_id, Category.all, :id, :category_name %> 
       <%= f.submit 'Start the discussion', class: "button radius small"  %><br />
     <% end %>
 
