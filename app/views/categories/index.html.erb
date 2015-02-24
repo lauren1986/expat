@@ -7,7 +7,7 @@
     <p>Find me in app/views/categories/index.html.erb</p>
 
     <div class="row">
-        <% @posts.each do |post| %>
+        <% posts.each do |post| %>
         <div class="large-10 columns">
           <h3><%= link_to post.post_title, post %></h3>
           <p><span class="post-meta">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.first_name %> <%= post.user.last_name %></span>
