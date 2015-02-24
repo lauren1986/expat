@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    add_breadcrumb "#{@post.category.category_name}", :category_path
+    add_breadcrumb "#{@post.category.category_name}", :post_path
     add_breadcrumb "#{@post.post_title}", :post_path, :style => 'active'
 
   end
