@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  before_filter :authorize
 
   before_action :find_post, only: [:show, :edit, :update, :destroy]
 
