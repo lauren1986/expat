@@ -10,6 +10,10 @@
     <%= form_for @post do |f| %>
       <%= f.text_field :post_title, :placeholder => "Enter a short title for your question..." %>
       <%= f.text_area :content, :placeholder => "Give more details here..." %>
+      <%= f.label :category_ids, "Categories" %>
+      <%= collection_select(:post, :category_id, Category.all, :id, :category_name) %>
+      <%= collection_check_boxes(:post, :category_ids, Category.all, :id, :category_name) %>
+      <%= f.select :category_ids, Category.all.collect{|c| [c.category_name, c.id]}, {}, {multiple: 'multiple', :size => 10, style: "height: 60%"} 
       <%= f.submit 'Start the discussion', class: "button radius small"  %><br />
     <% end %>
 
