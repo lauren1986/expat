@@ -12,7 +12,7 @@
 
     <p><%= simple_format(@post.content) %></p>
 
-    <p class="post-meta"><i class="fi-price-tag"></i><%= @post.category_id %>
+    <p class="post-meta"><i class="fi-price-tag"></i> <%= @post.category_id %><%= @category.category_name %>
     <br /><i class="fi-marker"></i> City, State, Country</p>
 
     <% if current_user == @post.user %>
