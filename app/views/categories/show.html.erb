@@ -10,26 +10,6 @@
     <h1><%= @category.category_name %> posts</h1>
     <p>Find me in app/views/categories/show.html.erb</p>
 
-    <div class="row">
-      <% @posts.each do |post| %>
-        <div class="large-10 columns">
-          <h3><%= link_to post.post_title, post %></h3>
-          <p><span class="post-meta">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.first_name %> <%= post.user.last_name %></span>
-          <br /><i class="fi-price-tag"></i> <%= post.category.category_name %>
-          <br /><i class="fi-marker"></i> City, State, Country</p>
-        </div>
-        <div class="large-2 columns">
-          <p class="post-meta"><em><%= post.comments.count %> replies</em></p>
-        </div>
-          <hr />
-        <% end %>
-
-        <div class="pagination-centered">
-          <%= will_paginate @posts, renderer: FoundationPagination::Rails %>
-        </div>
-
-    </div>
-
 
   </div>
 
