@@ -24,30 +24,8 @@
      <!-- Left Nav Section -->
        <ul class="left">
          <li><a href="/posts"><i class="fi-torsos-all"></i> Forum Home</a></li>
-         <li class="has-dropdown"><%= link_to " By Category", categories_index_path, class: "fi-price-tag" %>
-           <ul class="dropdown">
-             <li><a href="/categories/1">Employment</a></li>
-             <li><a href="/categories/2">Health &amp; Safety</a></li>
-             <li><a href="/categories/3">Finance</a></li>
-             <li><a href="/categories/4">Housing &amp; Living</a></li>
-             <li><a href="/categories/5">Immigration &amp; Visas</a></li>
-             <li><a href="/categories/6">Language &amp; Education</a></li>
-             <li><a href="/categories/7">Miscellaneous</a></li>
-             <li><a href="/categories/8">People &amp; Culture</a></li>
-             <li><a href="/categories/9">Things To Do</a></li>
-             <li><a href="/categories/10">Transportation</a></li>
-          </ul>
-         </li>
-         <li class="has-dropdown"><a href="#"><i class="fi-marker"></i> By Destination</a>
-           <ul class="dropdown">
-             <li><a href="#">Africa</a></li>
-             <li><a href="#">Asia</a></li>
-             <li><a href="#">Australia</a></li>
-             <li><a href="#">Europe</a></li>
-             <li><a href="#">North America</a></li>
-             <li><a href="#">South America</a></li>
-          </ul>
-         </li>
+         <li><%= link_to " By Category", categories_index_path, class: "fi-price-tag" %></li>
+         <li><a href="#"><i class="fi-marker"></i> By Destination</a></li>
          <li><a href="#"><i class="fi-book"></i> Blog</a></li>
          <li><a href="#"><i class="fi-wrench"></i> Other Resources</a></li>
        </ul>
