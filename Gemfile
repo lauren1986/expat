@@ -23,6 +23,10 @@ gem 'foundation_rails_helper'
 gem 'foundation-icons-sass-rails'
 # Devise gem for authorization
 gem 'devise'
+# OmniAuth
+gem 'omniauth'
+# Facebook OAuth
+gem 'omniauth-facebook'
 # Breadcrumbs On Rails gem
 gem "breadcrumbs_on_rails"
 # Use jquery as the JavaScript library
@@ -56,6 +60,9 @@ gem 'skrollr-rails'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Add Rspec
+  gem 'rspec-rails', '~> 3.0'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
