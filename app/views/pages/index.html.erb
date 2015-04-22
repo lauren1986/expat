@@ -1,11 +1,11 @@
 <%= render '/layouts/enav' %>
 
-<img src="/assets/expat_homebanner.jpg" />
+<div class="large-12 columns home_hack">
+  <h1 class="text-center">Go Global, Live Local.</h1>
+  <h3 class="text-center">Explainer blurb: This is eventually going to be a super awesome home page.</h3>
+  <%= link_to "Join Now", new_user_registration_path, class: "button radius" %>
+</div>
 
-    <div class="large-12 columns home_hack">
-      <h1 class="text-center">Go Global, Live Local.</h1>
-      <h3 class="text-center">Explainer blurb: This is eventually going to be a super awesome home page.</h3>
-      <%= link_to "Join Now", new_user_registration_path, class: "button radius" %>
-      </div>
+<img src="/assets/expat_homebanner.jpg" />
 
 </div>
