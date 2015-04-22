@@ -1573,8 +1573,12 @@ $include-html-global-classes: $include-html-classes;
   background-image:url("/assets/home_1600x600.jpg");
 }
 
+.home_back {
+  position: relative;
+}
+
 .home_hack {
-  margin-top: -300px;
+  position: absolute;
 }
 
 @import 'foundation';
